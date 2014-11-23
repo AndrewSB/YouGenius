@@ -1,6 +1,7 @@
 YouGenius
 ===========
-[Download it!](https://chrome.google.com/webstore/detail/yougenius/bhhdjafmibffbkeepohbjknojlhnmlhm)
+[Download it!](https://chrome.google.com/webstore/detail/yougenius/bhhdjafmibffbkeepohbjknojlhnmlhm) 
+<br><br>
 <img align="center" src="http://i.imgur.com/NRKViTh.png" width="400" height="400"></img><br>
 
 This chrome extension adds [Genius](http://genius.com) functionality to YouTube, allowing you to see lyrics and their meanings alongside your video.
