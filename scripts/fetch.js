@@ -36,7 +36,7 @@ function display_stories(feed_data) {
 
 $(document).ready(function() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://idontfuckwithu.herokuapp.com/lyrics/stairway", true);
+  xhr.open("GET", "https://idontfuckwithu.herokuapp.com/lyrics/stairway", true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       // JSON.parse does not evaluate the attacker's scripts.
