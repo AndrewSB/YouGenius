@@ -7,7 +7,7 @@ This chrome extension adds [Genius](http://genius.com) functionality to YouTube,
 ## Team
 Contributor | Task
 --- | ---
-[Hilal Habashi](https://github.com/hilalh) | [Genius.com](www.genius.com) API
-[Andrew Breckenridge](https://github.com/AndrewSB) | YouTube Overlay scripts & [Genius.com](www.genius.com) API
+[Hilal Habashi](https://github.com/hilalh) | [Genius.com](http://genius.com) API
+[Andrew Breckenridge](https://github.com/AndrewSB) | YouTube Overlay scripts & [Genius.com](http://genius.com) API
 [James Mishra](https://github.com/jamesmishra) | YouTube Overlay scripts
 [Raphael Rouvinov-Kats](https://github.com/raphaelrk) | Extension / merging HTTP requests with content overlays
