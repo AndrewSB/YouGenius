@@ -8,6 +8,10 @@
 	color:#60c00b;
 }
 
+#title,  #title_form{
+	text-align: center;
+}
+
 /* No more customizations necessary below this */
 
 body {

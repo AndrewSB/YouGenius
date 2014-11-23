@@ -60,7 +60,7 @@ var connectAndPrint = function(title) {
                  </div>';
         item += '</div>';
 
-        $('#popup').append(item);
+        $('#lyrics').append(item);
       });
     }
   }
@@ -76,4 +76,10 @@ $(document).ready(function() {
    }
   );
 
+  var formbutton = document.getElementById('title_button');
+  formbutton.onclick = function() {
+    console.log("refetch called");
+    document.getElementById('lyrics').innerHTML = '';
+    connectAndPrint(document.getElementById('title_textarea').value);
+  }
 });
