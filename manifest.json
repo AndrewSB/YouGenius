@@ -1,9 +1,9 @@
 {
   "manifest_version" : 2,
   "name": "YouGenius",
-  "version": "0.1",
+  "version": "0.2",
 
-  "description": "Don't be that guy. Get the lyrics and get them too with YouGenius, an extension that displays song lyrics and their meanings in realtime alongside their YouTube videos.",
+  "description": "Get the lyrics and get them too with YouGenius, an extension that displays song lyrics and their meanings while browsing YouTube.",
   "icons": { "16" : "images/icon.png",
  			"48" : "images/48.png",
 			"128" : "images/128.png"},

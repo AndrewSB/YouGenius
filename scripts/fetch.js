@@ -1,6 +1,7 @@
 function fetch_feed() {
   chrome.extension.sendRequest({'action' : 'fetch_feed', 'url' : 'http://idontfuckwithu.herokuapp.com/lyrics/stairway'}, 
     function(response) {
+
       display_stories(response);
     }
   );
@@ -54,8 +55,7 @@ var connectAndPrint = function(title) {
         var class2 = '';
 
         item += '<div>'
-        item += '<span class="tag">00:12:' + (index + Math.random()) + '</span>\
-                 <div id="' + "id" + '" class="item">\
+        item += '<div id="' + "id" + '" class="item">\
                   <span class="description">' + post + '...</span>\
                  </div>';
         item += '</div>';

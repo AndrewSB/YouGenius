@@ -12,6 +12,10 @@
 	text-align: center;
 }
 
+#title {
+	text-transform: capitalize;
+}
+
 /* No more customizations necessary below this */
 
 body {
@@ -40,6 +44,7 @@ body {
 .item {
 	width:385px;
 	height:40px;
+
 	color:black;
 	font-family:Helvetica;
 /*	margin-top:-10px;*/
@@ -47,6 +52,7 @@ body {
 	text-overflow:ellipsis;
 	overflow:hidden;
 	margin-right:15px;
+	border-bottom: 1px solid crimson;
 }
 
 
