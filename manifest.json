@@ -5,21 +5,19 @@
 
   "description": "Don't be that guy. Get the lyrics and get them too with YouGenius, an extension that displays song lyrics and their meanings in realtime alongside their YouTube videos.",
   "icons": { "16" : "images/icon.png",
-      "48" : "images/48.png",
-      "128" : "images/128.png"},
+ 			"48" : "images/48.png",
+			"128" : "images/128.png"},
   "homepage_url": "http://youtube.com/",
-  "background": {
+	"background": {
     "page" : "background.html" },
-  "permissions": [
-    "http://youtube.com/*",
-    "https://youtube.com/*",
-    "http://idontfuckwithu.herokuapp.com/*",
-    "https://idontfuckwithu.herokuapp.com/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["http://www.youtube.com/watch?v=*", "https://www.youtube.com/watch?v=*"],
-      "js": ["scripts/jquery-1.6.1.min.js", "scripts/content_script.js"]
-    }
-  ]
+	"permissions": [
+	  "http://youtube.com/*",
+    "https://youtube.com/",
+    "http://idontfuckwithu.herokuapp.com/*"
+	],
+	"browser_action": {
+    "default_icon": "images/icon.png", 
+    "default_title": "YouGenius",      
+    "default_popup": "popup.html"       
+  }
 }
