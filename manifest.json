@@ -13,7 +13,8 @@
 	"permissions": [
 	  "http://youtube.com/*",
     "https://youtube.com/",
-    "http://idontfuckwithu.herokuapp.com/*"
+    "http://idontfuckwithu.herokuapp.com/*",
+    "tabs"
 	],
 	"browser_action": {
     "default_icon": "images/icon.png", 

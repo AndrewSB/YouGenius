@@ -34,9 +34,15 @@ function display_stories(feed_data) {
   });
 }
 
-$(document).ready(function() {
+var connectAndPrint = function(title) {
+  console.log("connecting and printing.");
+
+  title = title.split(" - YouTube")[0];
+  console.log("title: " + title);
+  $('#title')[0].innerHTML = title;
+
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://idontfuckwithu.herokuapp.com/lyrics/stairway", true);
+  xhr.open("GET", "http://idontfuckwithu.herokuapp.com/lyrics/" + title, true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       // JSON.parse does not evaluate the attacker's scripts.
@@ -48,14 +54,10 @@ $(document).ready(function() {
         var class2 = '';
 
         item += '<div>'
-        item += '<span class="tag">' + "tag" + '</span>\
-              <a href="' + "url" + '">\
-                <div id="' + "id" + '" class="item">\
-                  <img src="' + "img" + '" width="107" height="60" />\
-                  <h4>' + "title" + '</h4>\
+        item += '<span class="tag">00:12:' + (index + Math.random()) + '</span>\
+                 <div id="' + "id" + '" class="item">\
                   <span class="description">' + post + '...</span>\
-                </div>\
-              </a>';
+                 </div>';
         item += '</div>';
 
         $('#popup').append(item);
@@ -63,6 +65,15 @@ $(document).ready(function() {
     }
   }
   xhr.send();
+}
 
-  //fetch_feed();
+$(document).ready(function() {
+  console.log("ready");
+  chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
+   function(tab){
+    var title = tab[0].title;
+    connectAndPrint(title);
+   }
+  );
+
 });
